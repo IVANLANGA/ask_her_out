@@ -27,9 +27,21 @@
             cursor: pointer;
         }
         #no-button {
+    position: absolute;
+    left: 55%; /* Initially centered horizontally */
+    top: 50%; /* Initially centered vertically */
+    transform: translate(-50%, -50%); /* Center the button precisely */
+    transition: left 0.5s linear, top 0.5s linear; /* Smooth and linear transition */
+}
+
+#yes-button {
             position: absolute;
-            transition: left 0.5s linear, top 0.5s linear; /* Smooth and linear relocation */
+            left: 45%; /* Initially centered horizontally */
+            top: 50%; /* Initially centered vertically */
+            transform: translate(-50%, -50%); /* Center the button precisely */
+            transition: left 0.5s linear, top 0.5s linear; /* Smooth and linear transition */
         }
+
         #crying-kitten {
             position: fixed;
             top: 50%;
@@ -57,10 +69,10 @@
     <h1>Will you be my Valentine?</h1>
     <img id="kitten" src="kitten_waiting.gif" alt="Crying Kitten" width="253" height="233">
 
-    <div class="button-container">
+    
         <button id="yes-button">Yes</button>
         <button id="no-button">No</button>
-    </div>
+    
 
     <!-- Fireworks effect -->
     <div class="firework"></div>

@@ -169,6 +169,7 @@
 
         // Event listener for hovering over the "No" button
         noButton.addEventListener('mouseover', relocateNoButton);
+        noButton.addEventListener('click', relocateNoButton);
         yesButton.addEventListener('click', function() {
             clearInterval(intervalId); // Clear any existing interval
             rotateGifs(); // Show the first gif immediately
